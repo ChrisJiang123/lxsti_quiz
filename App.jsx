@@ -1036,6 +1036,48 @@ function Result({ result, radarData, onReset, onOpenPoster, serifStyle, monoStyl
         </button>
       </div>
 
+      {/* 页脚：made by / 反馈 / GitHub */}
+      <div
+        className="mt-8 rounded-2xl border-2 px-3 py-3 sm:px-5 text-center flex flex-wrap justify-center items-center gap-x-1 gap-y-2 leading-relaxed"
+        style={{
+          borderColor: INK,
+          backgroundColor: INK,
+          color: CREAM,
+          ...monoStyle,
+          fontSize: '11px',
+          letterSpacing: '0.02em',
+        }}
+      >
+        <a
+          href="https://www.instagram.com/ccccccchris0218/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-95 hover:underline hover:opacity-100"
+          style={{ color: CREAM }}
+        >
+          made by @ccccccchris0218
+        </a>
+        <span className="opacity-40 mx-0.5">·</span>
+        <span className="opacity-90">反馈</span>{' '}
+        <a
+          href="mailto:info@lxsti.dev"
+          className="inline-flex items-center gap-0.5 opacity-95 hover:underline"
+          style={{ color: MUSTARD }}
+        >
+          ✉ info@lxsti.dev
+        </a>
+        <span className="opacity-40 mx-0.5">·</span>
+        <a
+          href="https://github.com/ChrisJiang123"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-95 hover:underline inline-flex items-center gap-0.5"
+          style={{ color: CREAM }}
+        >
+          github ↗
+        </a>
+      </div>
+
       <style>{`
         .action-btn {
           transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -1050,7 +1092,7 @@ function Result({ result, radarData, onReset, onOpenPoster, serifStyle, monoStyl
         .action-btn-primary:active { box-shadow: 2px 2px 0 ${RED}; }
       `}</style>
 
-      <div className="mt-10 text-center text-xs opacity-50" style={monoStyle}>
+      <div className="mt-6 text-center text-xs opacity-50" style={monoStyle}>
         LXSTI · 留学生 TI
       </div>
     </div>
