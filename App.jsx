@@ -1036,43 +1036,44 @@ function Result({ result, radarData, onReset, onOpenPoster, serifStyle, monoStyl
         </button>
       </div>
 
-      {/* 页脚：made by / 反馈 / GitHub */}
+      {/* 页脚：纯文字，无背景条 */}
       <div
-        className="mt-8 rounded-2xl border-2 px-3 py-3 sm:px-5 text-center flex flex-wrap justify-center items-center gap-x-1 gap-y-2 leading-relaxed"
+        className="mt-8 text-center flex flex-wrap justify-center items-center gap-x-1 gap-y-1.5 leading-relaxed px-1"
         style={{
-          borderColor: INK,
-          backgroundColor: INK,
-          color: CREAM,
           ...monoStyle,
-          fontSize: '11px',
-          letterSpacing: '0.02em',
+          fontSize: '10px',
+          letterSpacing: '0.03em',
         }}
       >
         <a
           href="https://www.instagram.com/ccccccchris0218/"
           target="_blank"
           rel="noopener noreferrer"
-          className="opacity-95 hover:underline hover:opacity-100"
-          style={{ color: CREAM }}
+          className="hover:underline"
+          style={{ color: INK, opacity: 0.55 }}
         >
           made by @ccccccchris0218
         </a>
-        <span className="opacity-40 mx-0.5">·</span>
-        <span className="opacity-90">反馈</span>{' '}
+        <span style={{ color: INK, opacity: 0.35 }} className="mx-0.5">
+          ·
+        </span>
+        <span style={{ color: INK, opacity: 0.55 }}>反馈</span>{' '}
         <a
           href="mailto:info@lxsti.dev"
-          className="inline-flex items-center gap-0.5 opacity-95 hover:underline"
+          className="inline-flex items-center gap-0.5 hover:underline"
           style={{ color: MUSTARD }}
         >
           ✉ info@lxsti.dev
         </a>
-        <span className="opacity-40 mx-0.5">·</span>
+        <span style={{ color: INK, opacity: 0.35 }} className="mx-0.5">
+          ·
+        </span>
         <a
           href="https://github.com/ChrisJiang123"
           target="_blank"
           rel="noopener noreferrer"
-          className="opacity-95 hover:underline inline-flex items-center gap-0.5"
-          style={{ color: CREAM }}
+          className="hover:underline inline-flex items-center gap-0.5"
+          style={{ color: INK, opacity: 0.55 }}
         >
           github ↗
         </a>
